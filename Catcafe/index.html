@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Cafe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🐱 Cat Cafe Game</h1>
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <div class="controls">
+            <p><strong>How to Play:</strong></p>
+            <ul>
+                <li>Use <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> keys to move the chef cat</li>
+                <li>Customers automatically enter the cafe and order food</li>
+                <li>The chef cat automatically takes orders and prepares food</li>
+                <li>When food is ready, walk close to the customer to serve</li>
+                <li>Customers eat for 3 seconds then leave</li>
+                <li>Earn 1 coin for each successful delivery!</li>
+                <li>Press <kbd>SPACE</kbd> to spawn a customer (for testing)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Load game scripts in order -->
+    <script src="config.js"></script>
+    <script src="entities.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
